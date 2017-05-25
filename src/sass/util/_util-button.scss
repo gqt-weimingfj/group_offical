@@ -1,0 +1,86 @@
+
+$btn: ( primary: $primary, info: $info, gray: $gray, );
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    &:focus {
+        outline: none;
+    }
+    &,
+    &.btn-default {
+        min-width: 1.4*50px;
+        height: .7*50px;
+        padding: .06*50px .12*50px;
+        margin-bottom: 0;
+        line-height: .56*50px;
+        border: 1px solid #e3e3e3;
+        font-size: 0.32*50px;
+        font-weight: normal;
+    }
+    &.btn-full {
+        width: 100%;
+    }
+    &.btn-lg {
+        height: 44px;
+        line-height: 36px;
+        font-size: 17px;
+    }
+    &.btn-clear {
+        background-color: #fff!important;
+        color: #000!important;
+    }
+    &.disabled,
+    &.btn-clear.disabled {
+        border-color: $gray!important;
+        background-color: $gray!important;
+        color: #fff!important;
+    }
+    &.btn-primary {
+        border-color: map-get($btn, primary);
+        background-color: map-get($btn, primary);
+        color: #fff;
+        &.activated {
+            border-color: $primaryLight;
+            background-color: $primaryLight;
+        }
+    }
+    &.btn-info {
+        border-color: map-get($btn, info);
+        background-color: map-get($btn, info);
+        color: #fff;
+        &.activated {
+            background-color: $infoLight;
+            border-color: $infoLight;
+        }
+    }
+    &.btn-gray {
+        border-color: map-get($btn, gray);
+        background-color: map-get($btn, gray);
+        color: #fff;
+        &.activated {
+            background-color: $grayLight;
+            border-color: $grayLight;
+        }
+    }
+}
+
+.btn-box{
+    margin: 0.3*50px;
+    .btn{
+        width: 100%;
+        height: .9*50px;
+        border-radius: 4px;
+        font-size: .34*50px;
+    }
+}

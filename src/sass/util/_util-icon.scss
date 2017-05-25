@@ -1,0 +1,20 @@
+.ii {
+    display: inline-block;
+    width: .4*50px;
+    height: .4*50px;
+    background: center no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    &[class*=i-arrow-]{
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+    &.i-arrow-top{@include transform(rotate(-45deg)); }
+    &.i-arrow-right{@include transform(rotate(45deg)); }
+    &.i-arrow-bottom{@include transform(rotate(135deg)); }
+    &.i-arrow-left{@include transform(rotate(-135deg)); }
+}

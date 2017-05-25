@@ -1,0 +1,29 @@
+// path
+$pathImg: '../../images/';
+$pathCommon: '../../images/common';
+$pathIcon: '../../images/icon/';
+// color
+
+
+$primary: #1ba2ff;
+$info: #FF9805;
+$success: #15bc9e;
+$warning: #fb562f;
+$error: #fb562f;
+$red: $error;
+$gray: #c2c2c2;
+
+$primaryLight: lighten($primary,10%);
+$infoLight: lighten($info,10%);
+$successLight: lighten($success,10%);
+$warningLight: lighten($warning,10%);
+$errorLight: lighten($error,10%);
+$redLight: lighten($red,10%);
+$grayLight: lighten($gray,10%);
+
+$c-f2: #f2f2f2;
+$c-f7: #f7f7f7;
+$c-666: #666;
+$c-999: #999;
+$c-ddd: #ddd;
+$c-ccc: #ccc;
